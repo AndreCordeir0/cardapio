@@ -8,7 +8,6 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
-import java.io.Serial;
 
 @Getter
 @Setter
@@ -19,7 +18,6 @@ import java.io.Serial;
 @Table(name = "tb_cardapio")
 public class Cardapio implements IModel{
 
-    @Serial
     private static final long serialVersionUID = 3240025753777334601L;
 
     @Id

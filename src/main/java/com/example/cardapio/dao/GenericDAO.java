@@ -24,7 +24,7 @@ public class GenericDAO<T extends Serializable>{
 
     @SuppressWarnings("unchecked")
     public List<T> findAll() {
-        return entityManager.createQuery("from " + clazz.getName()).getResultList();
+        return entityManager.createQuery("from " + clazz).getResultList();
     }
 
     public T create(final T entity) {
